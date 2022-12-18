@@ -4,7 +4,7 @@
 
 .header__nav {
   display: flex;
-  align-items: center;
+  align-items: end;
 
   @media screen and (max-width: 767px) {
     padding-top: 12px;
@@ -52,21 +52,14 @@
   }
 }
 
-.header__button {
-  margin-left: 32px;
-
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-}
-
 // Button
 
 .button {
-  width: 152px;
-  height: 42px;
-
+display: flex;
+align-items: baseline;
+  min-width: 152px;
   padding: 12px 36px;
+margin-left: 32px;
 
   background: var(--btn-bg);
   border-radius: 10px;
@@ -83,6 +76,10 @@
   &:focus {
     background-color: var(--btn-bg-hover);
     color: var(--additional-bg);
+  }
+
+  @media screen and (max-width: 767px) {
+      display: none;
   }
 }
 
