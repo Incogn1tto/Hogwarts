@@ -11,7 +11,7 @@
   background-color: #c4c4c4;
   background-image: url(../images/mobile-bg@1x.jpg);
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: 321px) {
     background-image: url(../images/mobile-bg@1x.jpg);
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -19,7 +19,7 @@
       background-image: url(../images/mobile-bg@2x.jpg);
     }
   }
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 769px) {
     padding-top: 283px;
     background-image: url(../images/tablet-bg@1x.jpg);
     @media screen and (min-device-pixel-ratio: 2),
@@ -28,7 +28,7 @@
       background-image: line-height url(../images/tablet-bg@2x.jpg);
     }
   }
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: 1201px) {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: url(../images/desctop-bg@1x.jpg);
@@ -45,8 +45,7 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 393px;
-
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
       padding-bottom: 379px;
     }
   }
@@ -59,12 +58,12 @@
     border-radius: 10px;
     text-align: center;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
       width: 705px;
       height: 138px;
       padding: 28px 80px 29px 80px;
     }
-    @media screen and (min-width: $desctop) {
+    @media screen and (min-width: 1200px) {
       width: 968px;
       height: 138px;
       padding: 43px 109px;
@@ -76,13 +75,13 @@
     width: 202px;
     height: 186px;
     margin: 0;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-weight: 400;
     font-size: 12px;
     line-height: 2.55;
     color: #fcfcfc;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
       width: 545px;
       height: 81px;
       font-weight: 500;
@@ -91,7 +90,7 @@
       letter-spacing: 0.04em;
     }
 
-    @media screen and (min-width: $desctop) {
+    @media screen and (min-width: 1200px) {
       width: 750px;
       height: 52px;
       font-weight: 500;
@@ -102,28 +101,21 @@
   &__name {
     margin-top: 32px;
     margin-bottom: 12px;
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
       margin-bottom: 32px;
     }
   }
   &__name-text {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-weight: 500;
     font-size: 20px;
     line-height: 1.86;
     text-align: center;
     color: #131313;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
       font-size: 16px;
       line-height: 1.86;
     }
-  }
-  &__icon-first {
-    fill: #84a178;
-  }
-  &__icon-second {
-    margin-left: 18px;
-    fill: #d9d9d9;
   }
 }
