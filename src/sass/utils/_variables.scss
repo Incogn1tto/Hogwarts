@@ -31,7 +31,7 @@
         // Gradients
         --input-bg: rgba(248, 210, 78, 0.1);
 
-        --first-prod-gr: (0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),
+        --first-prod-gr: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),
                 #D9D9D9;
         --second-prod-gr: (0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
                 #D9D9D9;
