@@ -1,27 +1,71 @@
-<section class="customer-reviews">
-    <picture>
-        <source srcset="./images/c-rev/girl@1x.jpg 1x, ./images/c-rev/girl@2x.jpg 2x" media="(min-width: 320px)" />
-        <img src="./images/c-rev/girl@1x.jpg" alt="Girl" width="85" height="85" style="border-radius: 44px" />
-    </picture>
-    <ul class="customer-reviews__list">
-        <li class="customer-reviews__review">
-            <span class="customer-reviews__text">I love visiting your cafe. You prepare the most delicious ice cream in
-                Los Angeles! In addition, you have beautiful serving, cozy atmosphere
-                and polite staff.</span>
-        </li>
-        <li class="customer-reviews__name">
-            <span class="customer-reviews__name-text">Emily, Los Angeles</span>
-        </li>
-        <li class="customer-reviews__icons">
-            <svg class="customer-reviews__icon-first" width="12" height="12">
-                <use href="./images/icons.svg#ellipse"></use>
-            </svg>
-            <svg class="customer-reviews__icon-second" width="12" height="12">
-                <use href="./images/icons.svg#ellipse"></use>
-            </svg>
-            <svg class="customer-reviews__icon-second" width="12" height="12">
-                <use href="./images/icons.svg#ellipse"></use>
-            </svg>
-        </li>
-    </ul>
+<section class="customer-reviews swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="customer-reviews__list swiper-slide">
+            <picture>
+                <source srcset="./images/c-rev/girl@1x.jpg 1x, ./images/c-rev/girl@2x.webp 2x"
+                    media="(min-width: 1200px)" />
+                <source srcset="./images/c-rev/girl@1x.jpg 1x, ./images/c-rev/girl@2x.webp 2x"
+                    media="(min-width: 768px)" />
+                <source srcset="./images/c-rev/girl@1x.jpg 1x, ./images/c-rev/girl@2x.webp 2x"
+                    media="(min-width: 320px)" />
+                <img src="./images/c-rev/girl@1x.webp" alt="Emily" width="85" height="85" style="border-radius: 44px" />
+            </picture>
+            <div class="customer-reviews__review">
+                <span class="customer-reviews__text">I love visiting your cafe. You prepare the most delicious ice cream
+                    in Los Angeles! In addition, you have beautiful serving, cozy
+                    atmosphere and polite staff.</span>
+            </div>
+            <h2 class="visually-hidden">Customer reviews</h2>
+            <div class="customer-reviews__name">
+                <span class="customer-reviews__name-text">Emily, Los Angeles</span>
+            </div>
+        </div>
+
+        <div class="customer-reviews__list swiper-slide">
+            <picture>
+                <source srcset="./images/c-rev/bryan@1x.png 1x, ./images/c-rev/bryan@2x.webp 2x"
+                    media="(min-width: 1200px)" />
+                <source srcset="./images/c-rev/bryan@1x.png 1x, ./images/c-rev/bryan@2x.webp 2x"
+                    media="(min-width: 768px)" />
+                <source srcset="./images/c-rev/bryan@1x.png 1x, ./images/c-rev/bryan@2x.webp 2x"
+                    media="(min-width: 320px)" />
+                <img src="./images/c-rev/bryan@1x.webp" alt="Bryan" width="85" height="85"
+                    style="border-radius: 44px" />
+            </picture>
+            <div class="customer-reviews__review">
+                <span class="customer-reviews__text">Every day we come to you with friends after classes in college. We
+                    love your ice cream and casual atmosphere!</span>
+            </div>
+            <div class="customer-reviews__name">
+                <span class="customer-reviews__name-text">Bryan, New-York</span>
+            </div>
+        </div>
+
+        <div class="customer-reviews__list swiper-slide">
+            <picture>
+                <source srcset="./images/c-rev/diana@1x.png 1x, ./images/c-rev/diana@2x.webp 2x"
+                    media="(min-width: 1200px)" />
+                <source srcset="./images/c-rev/diana@1x.png 1x, ./images/c-rev/diana@2x.webp 2x"
+                    media="(min-width: 768px)" />
+                <source srcset="./images/c-rev/diana@1x.png 1x, ./images/c-rev/diana@2x.webp 2x"
+                    media="(min-width: 320px)" />
+                <img src="./images/c-rev/diana@1x.webp" alt="Diana" width="85" height="85"
+                    style="border-radius: 44px" />
+            </picture>
+            <div class="customer-reviews__review">
+                <span class="customer-reviews__text">Ice cream is my passion! I love your chocolate hazelnut ice cream!
+                    And I really like the excellent service - always served politely and
+                    quickly!
+                </span>
+            </div>
+            <div class="customer-reviews__name">
+                <span class="customer-reviews__name-text">Diana, Chicago</span>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
 </section>

@@ -1,18 +1,18 @@
-.hero{
+.hero {
 
-background-color: var(--primary-bg);
-height: 453px;
+    background-color: var(--primary-bg);
+    height: 453px;
 
 
-@media screen and (min-width: $tablet) {
-    
-    height: 374px;
-}
+    @media screen and (min-width: $tablet) {
 
-@media screen and (min-width: $desktop) {
-    
-    height: 591px;
-}
+        height: 374px;
+    }
+
+    @media screen and (min-width: $desktop) {
+
+        height: 591px;
+    }
 }
 
 .hero_container {
@@ -21,7 +21,7 @@ height: 453px;
 
 // Left side
 .hero_title {
-    
+
 
     font-family: 'Seymour One';
     font-style: normal;
@@ -30,10 +30,10 @@ height: 453px;
     line-height: 1.27;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    
+
     color: var(--secondary-bg);
     margin-bottom: 32px;
-    margin-top: 47px;
+    margin-top: 50px;
 
     @media screen and (min-width: $tablet) {
         width: 247px;
@@ -44,7 +44,7 @@ height: 453px;
     @media screen and (min-width: $desktop) {
         font-size: 38px;
         line-height: 1.26;
-        
+
         width: 367px;
         margin-top: 48px;
         margin-bottom: 28px;
@@ -59,13 +59,13 @@ height: 453px;
 }
 
 .hero_button--product {
-    
+
     display: block;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
     text-align: center;
-    
+
     color: var(--secondary-text);
 
     border: 2px solid var(--accent);
@@ -75,7 +75,10 @@ height: 453px;
     margin-right: 12px;
     cursor: pointer;
 
-    &:hover{
+    transition: $trns-brd;
+
+
+    &:hover {
         border: 2px solid var(--btn-bg-hover);
     }
 
@@ -85,12 +88,12 @@ height: 453px;
     }
 
 
-    
 
-    // &:visited {
-    //     border-color: var(--btn-bg-disabled);
-        
-    // }
+
+    &:visited {
+        border-color: var(--btn-bg-disabled);
+
+    }
 
     @media screen and (min-width: $desktop) {
         font-size: 14px;
@@ -104,7 +107,7 @@ height: 453px;
 
 
 .hero_button--made {
-    
+
     top: 106%;
     left: 45%;
     display: block;
@@ -113,25 +116,26 @@ height: 453px;
     line-height: 1.25;
     text-align: center;
     text-decoration-line: underline;
-    
+
     color: var(--accent);
     background-color: transparent;
     border: none;
     cursor: pointer;
 
+    transition: $trns-hover;
 
     &:hover {
         color: var(--btn-bg-hover);
     }
-    
+
     &:focus {
         color: var(--secondary-bg);
     }
-    
-    // &:visited {
-    //     color: var(--btn-bg-disabled);
 
-    // }
+    &:visited {
+        color: var(--btn-bg-disabled);
+
+    }
 
     @media screen and (min-width: $tablet) {
         top: 41%;
@@ -143,7 +147,7 @@ height: 453px;
         line-height: 1.21;
         left: 15%;
         top: 52%;
-        
+
     }
 }
 
@@ -167,7 +171,7 @@ height: 453px;
     @media screen and (max-width: 767px) {
         display: none;
     }
-    
+
 }
 
 .hero_list-quantities {
@@ -177,7 +181,7 @@ height: 453px;
     text-align: right;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    
+
     color: var(--secondary-text);
 
     margin-bottom: 4px;
@@ -192,9 +196,9 @@ height: 453px;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
-        
+
     text-align: right;
-    
+
     color: var(--primary-text);
 
     @media screen and (min-width: $desktop) {
@@ -211,11 +215,11 @@ height: 453px;
 // Bottom side
 
 .hero_bottom-side {
-    
-    
+
+
     @media screen and (min-width: $tablet) {
-            margin-left: 184px;
-        }
+        margin-left: 184px;
+    }
 
     @media screen and (max-width: 767px) {
         display: none;
@@ -228,27 +232,27 @@ height: 453px;
 
 .hero_text {
     width: 139px;
-    
+
     font-weight: 400;
     font-size: 12px;
     line-height: 1.42;
-    letter-spacing: 0.04;    
-        
-    color: var(--primary-text); 
-    
+    letter-spacing: 0.04;
+
+    color: var(--primary-text);
+
     @media screen and (min-width: $desktop) {
         width: 210px;
         margin-bottom: 24px;
 
         font-size: 14px;
-        line-height: 1.43; 
-        text-align: justify;       
+        line-height: 1.43;
+        text-align: justify;
     }
 }
 
 .hero_link {
     cursor: pointer;
-    
+
 }
 
 .hero_arrow {
@@ -260,7 +264,7 @@ height: 453px;
 // Images
 
 .hero_image-icecream {
-    
+
     position: absolute;
     top: 236px;
     left: 25%;
@@ -270,48 +274,48 @@ height: 453px;
     animation-name: Appearance;
     animation-duration: 1s;
     animation-timing-function: cubic-bezier(.1, -.6, .2, 0);
-    
-    
-        @-webkit-keyframes Appearance {
-            0% {
-                opacity: 0;
-            }
-    
-            100% {
-                opacity: 1;
-            }
+
+
+    @-webkit-keyframes Appearance {
+        0% {
+            opacity: 0;
         }
-    
-        @-o-keyframes Appearance {
-            0% {
-                opacity: 0;
-            }
-    
-            100% {
-                opacity: 1;
-            }
+
+        100% {
+            opacity: 1;
         }
-    
-        @-moz-keyframes Appearance {
-            0% {
-                opacity: 0;
-            }
-    
-            100% {
-                opacity: 1;
-            }
+    }
+
+    @-o-keyframes Appearance {
+        0% {
+            opacity: 0;
         }
-    
-        @keyframes Appearance {
-            0% {
-                opacity: 0;
-            }
-    
-            100% {
-                opacity: 1;
-            }
+
+        100% {
+            opacity: 1;
         }
-    
+    }
+
+    @-moz-keyframes Appearance {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes Appearance {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
     @media screen and (min-width: $tablet) {
         left: 53%;
         top: 45px;
@@ -320,7 +324,7 @@ height: 453px;
     @media screen and (min-width: $desktop) {
         left: 54%;
         top: 32px;
-        
+
     }
 }
 
@@ -330,15 +334,15 @@ height: 453px;
     top: 403px;
     left: 0;
     pointer-events: none;
-    
-    
-    
+
+
+
     @media screen and (min-width: 768px) {
         top: 304px;
     }
 
     @media screen and (min-width: 1200px) {
-        top: 206px;        
+        top: 206px;
     }
 }
 
@@ -349,20 +353,13 @@ height: 453px;
     top: 58%;
     z-index: 1;
 
-    
-    
+
+
 
     @media screen and (min-width: $desktop) {
         top: 58%;
         left: 16px;
     }
 
-        
+
 }
-
- 
-
-
-
-
-

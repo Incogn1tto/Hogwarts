@@ -1,47 +1,57 @@
 .advantages {
     padding-bottom: 32px;
-    background-color: var(--primary-bg) ;
+    background-color: var(--primary-bg);
 
     @media screen and (min-width: $tablet) {
         padding-bottom: 60px;
     }
-   
+
     @media screen and (min-width: $desktop) {
         padding-bottom: 80px;
     }
 }
 
 .advantages-list {
-        @media screen and (min-width: 768px) {
-            
+    @media screen and (min-width: 768px) {
+
         display: flex;
         align-items: baseline;
     }
 }
 
 .advantages-titel {
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 44px;
+    line-height: calc(44 / 36);
     text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
     margin-bottom: 16px;
 
-    color:var(--secondary-bg);
+    color: var(--secondary-bg);
+
+    @media screen and (max-width: 767px) {
+        text-transform: uppercase;
+    }
+
+    @media screen and (min-width: $tablet) {
+        font-size: 48px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 58px;
+    }
 }
 
 
- .section-titel {
-            @media screen and (min-width: 768px) {
-                font-size: 48px;
-                line-height: 59px;
-            }
-            @media screen and (min-width: 1200px) {
-                font-size: 58px;
-                line-height: 71px;
-            }
+.section-titel {
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: 59px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+        line-height: 71px;
+    }
 }
 
 .advantages-text {
@@ -53,14 +63,14 @@
     text-align: center;
 
     @media screen and (min-width: 768px) {
-                font-size: 14px;
-                line-height: 174%;
-            }
-    
-        @media screen and (min-width: 1200px) {
-                font-size: 16px;
-                line-height: 176%;
-            }
+        font-size: 14px;
+        line-height: 174%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 176%;
+    }
 }
 
 .advantages-item {
@@ -71,7 +81,7 @@
 
 
 .advantages-item:not(:last-child) {
-@media screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         margin-bottom: 28px;
     }
 }
@@ -79,23 +89,33 @@
 
 .advantages-item {
     @media screen and (min-width: 768px) {
-                width: 152px;
-            }
+        width: 152px;
+    }
+
     @media screen and (min-width: 1200px) {
-    width: 300px;
-            }
-     &::before {
-                    display: block;
-                    content: "";
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 25px;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-color:var(--accent);
-                    margin-bottom: 16px;
-                }
-            }
+        width: 300px;
+    }
+
+    &::before {
+        display: block;
+        content: "";
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: var(--accent);
+        margin-bottom: 16px;
+
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 32px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 40px;
+        }
+    }
+}
 
 .cow-icon::before {
     background-image: url(../images/icons/cow.svg);
@@ -105,12 +125,12 @@
 
 .weight-icon::before {
     background-image: url(../images/icons/weight.svg);
-        margin-left: auto;
-            margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .ice-crema-icon::before {
     background-image: url(../images/icons/ice-crema.svg);
-        margin-left: auto;
-        margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }

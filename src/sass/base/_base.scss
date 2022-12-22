@@ -5,49 +5,55 @@ html {
 body {
 
     color: var(--primary-text);
-        font-family: var(--primary-font);
-        font-size: 14px;
-        letter-spacing: 0.04em;
-        
+    font-family: var(--primary-font);
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    font-weight: normal;
+
     background-repeat: repeat-y;
     background-size: contain;
     background-position: top;
 
     // mobile screen
-    background-image: url('.././images/bg/mobile-bg.jpg');
+    background-image: url('.././images/bg/mobile-bg.webp');
+
     //  mobile retina
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-        background-image: url('.././images/bg/mobile-bg@2x.jpg');
+        background-image: url('.././images/bg/mobile-bg@2x.webp');
     }
 
-     // tablet screen
-     @media screen and (min-width: $tablet) {
-         background-image: url('.././images/bg/tablet-bg.jpg')
-     }
-     // tablet retina
-     @media screen and (min-width: $tablet) {
-         @media screen and (min-device-pixel-ratio: 2),
-         screen and (min-resolution: 192dpi),
-         screen and (min-resolution: 2dppx) {
-             background-image: url('.././images/bg/tablet-bg@2x.jpg');
-         }
-     }
-
-    // desktop screen
-    @media screen and (min-width: $desktop) {
-        background-image: url('.././images/bg/desktop-bg.png')
+    // tablet screen
+    @media screen and (min-width: $tablet) {
+        background-image: url('.././images/bg/tablet-bg.webp')
     }
-    // desktop retina
-    @media screen and (min-width: $desktop) {
+
+    // tablet retina
+    @media screen and (min-width: $tablet) {
+
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            background-image: url('.././images/bg/desktop-bg@2x.jpg');
+            background-image: url('.././images/bg/tablet-bg@2x.webp');
         }
     }
 
-    
+    // desktop screen
+    @media screen and (min-width: $desktop) {
+        background-image: url('.././images/bg/desktop-bg.webp')
+    }
+
+    // desktop retina
+    @media screen and (min-width: $desktop) {
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url('.././images/bg/desktop-bg@2x.webp');
+        }
+    }
+
+
 
 }

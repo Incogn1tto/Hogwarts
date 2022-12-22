@@ -11,7 +11,9 @@
     letter-spacing: $ls;
 }
 
-// @mixin fonts($fs, $lh, $fw: false, $ls: 0.02em) {
+// Vers 2
+
+// @mixin fonts($fs, $lh, $fw: false, $ls: 0.04em) {
 //     @if $fw {
 //         font-weight: $fw;
 //     }
