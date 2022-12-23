@@ -90,7 +90,7 @@
 
 
 
-    &:visited {
+    &:disabled {
         border-color: var(--btn-bg-disabled);
 
     }
@@ -132,7 +132,7 @@
         color: var(--secondary-bg);
     }
 
-    &:visited {
+    &:disabled {
         color: var(--btn-bg-disabled);
 
     }
