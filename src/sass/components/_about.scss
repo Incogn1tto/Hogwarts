@@ -176,6 +176,7 @@
         letter-spacing: 0.04em;
 
         @include fonts(14, 27, 400);
+        
     }
 
 }
@@ -184,6 +185,40 @@
 
     @media screen and (min-width: $tablet) {
         margin-bottom: 8px;
+    }
+}
+
+// .animate__animated.animate__bounceInRight
+//  {
+//     --animate-duration: 2000ms;
+// }
+
+
+.about-list__text {
+    overflow: hidden;
+}
+
+.about-list__text._active:nth-child(1) p {
+    transition: all 0.8s ease 0.1s;
+}
+
+.about-list__text._active:nth-child(2) p {
+    transition: all 0.8s ease 0.3s;
+}
+
+.about-list__text._active:nth-child(3) p {
+    transition: all 0.8s ease 0.5s;
+}
+
+.about__text {
+    transform: translate(120%, 0);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+        
+    &._active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 0.8s ease 0.4s;
     }
 }
 
