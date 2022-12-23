@@ -248,7 +248,7 @@ textarea {
 }
 
 .box__item:focus-within .label__span {
-  background-color: #96AF8C;
+   border: 2px solid #000000;
 }
 
 .box__two {
@@ -290,11 +290,8 @@ textarea {
   background-color: #EFD478;
 }
 
-.label__span--three {
-  border: 2px solid #EFD478;
-  .box__item:focus-within & {
-    background-color: #EFD478;
-  }
+.box__item:focus-within .label__span--three {
+   border: 2px solid #000000;
 }
 
 .box__four {
@@ -331,11 +328,8 @@ textarea {
    background-color: #D6936D;
 } 
 
-.label__span--five {
-  border: 2px solid #D6936D;
-  .box__item:focus-within & {
-    background-color: #D6936D;
-  }
+.box__item:focus-within .label__span--five {
+   border: 2px solid #000000;
 }
 
 .box__six {
@@ -412,9 +406,9 @@ textarea {
    .about__subject {
      @media screen  and (max-width: 767px) {
       width: 120px;
+      text-align: right;
       margin-left: auto;
       margin-right: auto;
-      
      }
    }
 
