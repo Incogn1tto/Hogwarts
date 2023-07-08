@@ -1,3 +1,3 @@
 # Ice Cream
 
-https://incogn1tto.github.io/hogwarts/
+https://incogn1tto.github.io/IceCream/
